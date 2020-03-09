@@ -7,6 +7,7 @@
   <script src="components/loader.js"></script>
   <!-- inserir jquery -->
   <script src="lib/jquery-3.4.1.min.js"></script>
+  <script src="components/calculo.js"></script>
   
 
   <link rel="stylesheet" href="components/loader.css">
@@ -19,6 +20,42 @@
   
 </head>
 <body>
- Olá mundo!
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="n1">Valor 1</label>
+            <input type="number" class="form-control" name="um" id="n1">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="n2">Valor 2</label>
+            <input type="number" class="form-control" name="dois" id="n2">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+           <button class="btn btn-primary btn-block" name="calcular" id="calc">Calcular</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="result">Resultado</label>
+            <input type="number" class="form-control" name="resultado" id="result" readonly>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
